@@ -1,100 +1,102 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f5f7;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  header {
-    padding: 10px;
-    text-align: center;
-    border-bottom: 2px solid #ccc;
-  }
-  
-  h1 {
-    color: #0079bf;
-    margin: 0;
-  }
-  
-  .board {
-    display: flex;
-    gap: 20px;
-    padding: 10px 0;
-  }
-  
-  .list {
-    background-color: #ffffff;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    width: 300px;
-    padding: 10px;
-  }
-  
-  .list h2 {
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .card {
-    background-color: #e2e4e6;
-    border-radius: 3px;
-    padding: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    border: 2px solid #bebfc0;
-  }
-  
-  .card:hover {
-    background-color: #d7d9d9;
-    border-color: #aab8c2;
-  }
-  
-  footer {
-    padding: 10px;
-    text-align: center;
-    font-size: 12px;
-    border-top: 2px solid #ccc;
-    margin-top: 20px;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  /*Sobre mí*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f5f7;
+}
 
-  form {
-    margin-top: 20px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+}
+
+h1 {
+  color: #0079bf;
+  margin: 0;
+}
+
+.board {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.list {
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  padding: 10px;
+}
+
+.list h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card {
+  background-color: #e2e4e6;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: 2px solid #bebfc0;
+}
+
+.card:hover {
+  background-color: #d7d9d9;
+  border-color: #aab8c2;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  border-top: 2px solid #ccc;
+  margin-top: 20px;
+}
+
+/*Sobre mí*/
+
+form {
+  margin-top: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 label {
-    display: block;
-    margin-bottom: 10px;
+  display: block;
+  margin-bottom: 10px;
 }
-input[type="text"], input[type="email"], textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 input[type="submit"] {
-    background: #5cb85c;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
+  background: #5cb85c;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 input[type="submit"]:hover {
-    background: #4cae4c;
+  background: #4cae4c;
 }
