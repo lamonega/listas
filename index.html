@@ -10,29 +10,126 @@
       href="img/favicon/favicon-listas.png"
       type="image/x-icon"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <header>
         <h1>Listas</h1>
+        <nav>
+          <button id="nuevoTablero" class="btn-primary">
+            <i class="material-icons">assignment_add</i>
+            Nuevo tablero
+          </button>
+        </nav>
       </header>
       <main>
         <div class="board">
           <section class="list">
-            <h2>Lista 1</h2>
-            <div class="card">Tarea 1</div>
-            <div class="card">Tarea 2</div>
+            <h2>
+              Lista 1
+              <button class="eliminarLista btn-danger">
+                <i class="material-icons">delete</i>
+              </button>
+            </h2>
+            <div class="tareaContainer">
+              <div class="card">
+                Tarea 1
+                <div class="tareaButtons">
+                  <button class="completarTarea btn-success">
+                    <i class="material-icons">check</i>
+                  </button>
+                  <button class="eliminarTarea btn-danger">
+                    <i class="material-icons">delete</i>
+                  </button>
+                </div>
+              </div>
+              <div class="card">
+                Tarea 2
+                <div class="tareaButtons">
+                  <button class="completarTarea btn-success">
+                    <i class="material-icons">check</i>
+                  </button>
+                  <button class="eliminarTarea btn-danger">
+                    <i class="material-icons">delete</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="agregarTarea btn-primary">
+              <i class="material-icons">add_task</i>
+              Agregar Tarea
+            </button>
           </section>
           <section class="list">
-            <h2>Lista 2</h2>
-            <div class="card">Tarea 3</div>
+            <h2>
+              Lista 2
+              <button class="eliminarLista btn-danger">
+                <i class="material-icons">delete</i>
+              </button>
+            </h2>
+            <div class="tareaContainer">
+              <div class="card">
+                Tarea 3
+                <div class="tareaButtons">
+                  <button class="completarTarea btn-success">
+                    <i class="material-icons">check</i>
+                  </button>
+                  <button class="eliminarTarea btn-danger">
+                    <i class="material-icons">delete</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="agregarTarea btn-primary">
+              <i class="material-icons">add_task</i>
+              Agregar Tarea
+            </button>
           </section>
           <section class="list">
-            <h2>Lista 3</h2>
-            <div class="card">Tarea 4</div>
-            <div class="card">Tarea 5</div>
+            <h2>
+              Lista 3
+              <button class="eliminarLista btn-danger">
+                <i class="material-icons">delete</i>
+              </button>
+            </h2>
+            <div class="tareaContainer">
+              <div class="card">
+                Tarea 4
+                <div class="tareaButtons">
+                  <button class="completarTarea btn-success">
+                    <i class="material-icons">check</i>
+                  </button>
+                  <button class="eliminarTarea btn-danger">
+                    <i class="material-icons">delete</i>
+                  </button>
+                </div>
+              </div>
+              <div class="card">
+                Tarea 5
+                <div class="tareaButtons">
+                  <button class="completarTarea btn-success">
+                    <i class="material-icons">check</i>
+                  </button>
+                  <button class="eliminarTarea btn-danger">
+                    <i class="material-icons">delete</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="agregarTarea btn-primary">
+              <i class="material-icons">add_task</i>
+              Agregar Tarea
+            </button>
           </section>
         </div>
+        <button class="agregarLista btn-primary">
+          <i class="material-icons">playlist_add_check</i>
+          Agregar Lista
+        </button>
       </main>
       <footer>
         <p>

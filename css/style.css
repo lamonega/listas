@@ -16,20 +16,72 @@ body {
 }
 
 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 10px;
-  text-align: center;
   border-bottom: 2px solid #ccc;
 }
 
 h1 {
   color: #0079bf;
-  margin: 0;
+}
+
+button {
+  display: flex;
+  justify-items: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 10px;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #0079bf;
+  border: 2px solid #005a8c;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #005a8c;
+  border: 2px solid #004266;
+}
+
+.btn-primary > i {
+  margin-right: 5px;
+}
+
+.btn-success {
+  background-color: #5cb85c;
+  border: 2px solid #429742;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #429742;
+  border: 2px solid #367936;
+}
+
+.btn-danger {
+  background-color: #d9534f;
+  border: 2px solid #c9302c;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c9302c;
+  border: 2px solid #9b2622;
 }
 
 .board {
   display: flex;
   gap: 20px;
   padding: 10px 0;
+  overflow-x: auto;
 }
 
 .list {
@@ -38,10 +90,18 @@ h1 {
   border-radius: 5px;
   width: 300px;
   padding: 10px;
+  position: relative;
 }
 
 .list h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: #333;
+  margin-bottom: 10px;
+}
+
+.tareaContainer {
   margin-bottom: 10px;
 }
 
@@ -50,13 +110,19 @@ h1 {
   border-radius: 3px;
   padding: 10px;
   margin-bottom: 10px;
-  cursor: pointer;
   border: 2px solid #bebfc0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .card:hover {
   background-color: #d7d9d9;
   border-color: #aab8c2;
+}
+
+.tareaButtons {
+  display: flex;
 }
 
 footer {
@@ -67,7 +133,11 @@ footer {
   margin-top: 20px;
 }
 
-/*Sobre mí*/
+.agregarLista {
+  margin-top: 20px;
+}
+
+/* Sobre mí */
 
 form {
   margin-top: 20px;
@@ -76,10 +146,12 @@ form {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 label {
   display: block;
   margin-bottom: 10px;
 }
+
 input[type="text"],
 input[type="email"],
 textarea {
@@ -89,6 +161,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
 input[type="submit"] {
   background: #5cb85c;
   color: #fff;
@@ -97,6 +170,17 @@ input[type="submit"] {
   cursor: pointer;
   border-radius: 5px;
 }
+
 input[type="submit"]:hover {
   background: #4cae4c;
+}
+
+.about-me,
+.contact {
+  padding: 10px;
+  margin: 10px;
+}
+
+.about-me > h1 {
+  margin-bottom: 10px;
 }
