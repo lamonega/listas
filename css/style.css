@@ -13,6 +13,9 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -29,7 +32,7 @@ h1 {
 
 button {
   display: flex;
-  justify-items: space-between;
+  justify-content: center;
   align-items: center;
   border-radius: 5px;
   padding: 8px 12px;
@@ -77,11 +80,20 @@ button {
   border: 2px solid #9b2622;
 }
 
-.board {
+main {
+  flex: 1;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
   padding: 10px 0;
-  overflow-x: auto;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .list {
@@ -90,7 +102,8 @@ button {
   border-radius: 5px;
   width: 300px;
   padding: 10px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .list h2 {
@@ -137,53 +150,54 @@ footer {
   margin-top: 20px;
 }
 
-/* Sobre mí */
+/* Responsividad */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
 
-form {
-  background: #dddddd;
-  border-radius: 5px;
-  border: 2px solid #777777;
-  margin: 20px 0;
-  padding: 20px;
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .board {
+    flex-direction: column;
+  }
+
+  .list {
+    width: 100%;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
-label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .card {
+    padding: 8px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 2px solid #a3a3a3;
-  border-radius: 5px;
-  background: #e9e9e9;
-}
-
-input[type="submit"] {
-  background: #009700;
-  color: #fff;
-  border: 2px solid #006900;
-  padding: 5px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-input[type="submit"]:hover {
-  background: #006900;
-  border: 2px solid #005500;
-}
-
-.about-me,
-.contact {
-  padding: 10px;
-  margin: 10px;
-}
-
-.about-me > h1 {
-  margin-bottom: 10px;
+img {
+  height: 200px;
 }
