@@ -119,7 +119,7 @@ main {
   background-color: #ffffff;
   border: 2px solid var(--border-color);
   border-radius: 5px;
-  width: 300px;
+  min-width: 300px;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -225,4 +225,10 @@ footer {
 
 img {
   height: 200px;
+}
+
+.task.completed .task__name {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.6;
 }
