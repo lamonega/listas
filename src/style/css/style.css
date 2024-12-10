@@ -36,6 +36,15 @@ body {
   min-height: 100vh;
 }
 
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -98,15 +107,6 @@ button:focus {
   border: 2px solid var(--danger-border);
 }
 
-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  padding: 10px 0;
-}
-
 .board {
   display: flex;
   flex-wrap: wrap;
@@ -167,70 +167,18 @@ main {
   display: flex;
 }
 
+.task.completed .task__name {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.6;
+}
+
 footer {
   padding: 10px;
   text-align: center;
   font-size: 12px;
   border-top: 2px solid var(--border-color);
   margin-top: 20px;
-}
-
-/* Responsiveness */
-@media (max-width: 768px) {
-  .container {
-    padding: 10px;
-  }
-
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  .board {
-    flex-direction: column;
-  }
-
-  .list {
-    width: 100%;
-  }
-
-  .task {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.2rem;
-  }
-
-  button {
-    font-size: 12px;
-    padding: 6px 10px;
-  }
-
-  .task {
-    padding: 8px;
-  }
-
-  footer {
-    font-size: 10px;
-  }
-}
-
-img {
-  height: 200px;
-}
-
-.task.completed .task__name {
-  text-decoration: line-through;
-  color: gray;
-  opacity: 0.6;
 }
 
 .modal {
@@ -258,4 +206,29 @@ img {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .container { padding: 10px; }
+  header { 
+    flex-direction: column;
+    text-align: center;
+  }
+  h1 { font-size: 1.5rem; }
+  .board { flex-direction: column; }
+  .list { width: 100%; }
+  .task {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 1.2rem; }
+  button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+  .task { padding: 8px; }
+  footer { font-size: 10px; }
 }
