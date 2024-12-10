@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h2>${titulo}</h2>
                 <input type="text" placeholder="${placeholderTexto}" id="modal-input">
                 <div class="modal-buttons">
-                    <button id="modal-confirm">Confirmar</button>
                     <button id="modal-cancel">Cancelar</button>
+                    <button id="modal-confirm">Confirmar</button>
                 </div>
             </div>
         `;

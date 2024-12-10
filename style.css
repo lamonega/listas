@@ -200,12 +200,51 @@ footer {
   border-radius: 5px;
   width: 300px;
   text-align: center;
+  border: 2px solid var(--border-color);
+}
+
+.modal-content h2 {
+  margin-bottom: 12px;
+}
+
+#modal-input {
+  width: 100%;
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+  padding: 8px;
 }
 
 .modal-buttons {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
+}
+
+.modal-buttons button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid;
+}
+
+#modal-cancel {
+  background-color: var(--danger-color);
+  border-color: var(--danger-border);
+  color: white;
+}
+
+#modal-cancel:hover {
+  background-color: var(--danger-hover);
+}
+
+#modal-confirm {
+  background-color: var(--success-color);
+  border-color: var(--success-border);
+  color: white;
+}
+
+#modal-confirm:hover {
+  background-color: var(--success-hover);
 }
 
 @media (max-width: 768px) {
