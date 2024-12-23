@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <input type="text" name="user_name" placeholder="Tu nombre" required>
                     <input type="email" name="user_email" placeholder="Tu email" required>
                     <textarea name="message" placeholder="Tu mensaje" required rows="4"></textarea>
-                    <button type="submit">
+                    <button type="submit" class="btn--primary">
                         <i class="material-icons">send</i> Enviar mensaje
                     </button>
                 </form>

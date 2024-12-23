@@ -247,8 +247,6 @@ footer {
   background-color: var(--success-hover);
 }
 
-/* Agregar al final del archivo CSS existente */
-
 .author-modal {
   position: fixed;
   top: 0;
@@ -260,15 +258,17 @@ footer {
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  padding: 2rem;
 }
 
 .author-modal-content {
   background: white;
-  padding: 30px;
+  padding: 2rem;
   border-radius: 10px;
   width: 90%;
   max-width: 500px;
-  height: auto;
+  max-height: 90vh;
+  overflow-y: auto;
   position: relative;
   animation: modalFadeIn 0.3s ease;
 }
@@ -300,14 +300,14 @@ footer {
 
 .author-profile {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
 }
 
 .author-profile img {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
   border: 3px solid var(--primary-color);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -342,7 +342,7 @@ footer {
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 1rem;
 }
 
 .contact-form input,
@@ -354,6 +354,11 @@ footer {
   transition: border-color 0.3s ease;
 }
 
+.contact-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
 .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: var(--primary-color);
@@ -361,18 +366,7 @@ footer {
 }
 
 .contact-form button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 8px;
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
@@ -382,6 +376,21 @@ footer {
 .contact-form button:disabled {
   background-color: var(--border-color);
   cursor: not-allowed;
+}
+
+@media (max-height: 700px) {
+  .author-profile img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .author-modal-content {
+    padding: 1.5rem;
+  }
+  
+  .contact-form textarea {
+    min-height: 80px;
+  }
 }
 
 @media (max-width: 768px) {
